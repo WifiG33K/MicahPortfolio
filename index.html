@@ -389,34 +389,49 @@
       <h3 id="subtitle">Fill out the form below and I will get back to you ASAP.</h3> 
     
     
-      <form action="https://formsubmit.co/finesseinnovations.com" method="POST">
-            Prefered contact method<span class="form-required">*</span> 
-              <div > <select style="width:150px" data-component="dropdown"  name="preference" required aria-label="Prefered contact method">
-                  <option value="">Please Select</option>
-                  <option value="Mobile">Mobile</option>
-                  <option value="Email">Email</option>
-                </select> </div>
-
-            <label for = "name"> Name <span class="form-required">*</span> </label>
-              <div> <input class="input"  id="name" required type="text"> </div>
-
-            <label for="organisation" > Organisation </label>
-              <div> <input class="input"  id="organisation"  type="text"> </div>
-
-            <label for="email"> Email<span class="form-required">*</span> </label>
-              <div> <input type="email" id="email" required class="input" placeholder="ex: myname@example.com"></div>
-
-            <label for="number"> Contact Number </label>
-              <div> <input type="text"  id="number" class="input"> </div>
-
-              <label for="message"> Message<span class="form-required">*</span> </label>
-              <div> <textarea class="area"  id="message" required cols="60" rows="6" placeholder="For website enquires please try and include as much detail as possible about your desired content. Also, if applicable send a website with a similar theme for clarification of concept.    " spellcheck="true"></textarea> </div>
-           
-              <label for ="imge"> If suitable attach an image </label>
-              <div> <input type="file"  id="image"  data-file-accept="pdf, doc, docx, jpg, jpeg, png, gif" data-file-maxsize="1024" data-file-minsize="0" data-file-limit="0" data-component="fileupload"> </div>
-            
-               <div class="btn" type="submit">Send Message</div>   
+      <form action="https://formsubmit.co/finesseinnovations@hotmail.com" method="POST">
+        Prefered contact method<span class="form-required">*</span> 
+        <div>
+          <select style="width:150px" data-component="dropdown" name="preference" required aria-label="Prefered contact method">
+            <option value="">Please Select</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Email">Email</option>
+          </select>
+        </div>
+      
+        <label for="name"> Name <span class="form-required">*</span> </label>
+        <div>
+          <input class="input" id="name" name="name" required type="text">
+        </div>
+      
+        <label for="organisation"> Organisation </label>
+        <div>
+          <input class="input" id="organisation" name="organisation" type="text">
+        </div>
+      
+        <label for="email"> Email<span class="form-required">*</span> </label>
+        <div>
+          <input type="email" id="email" name="email" required class="input" placeholder="ex: myname@example.com">
+        </div>
+      
+        <label for="number"> Contact Number </label>
+        <div>
+          <input type="text" id="number" name="number" class="input">
+        </div>
+      
+        <label for="message"> Message<span class="form-required">*</span> </label>
+        <div>
+          <textarea class="area" id="message" name="message" required cols="60" rows="6" placeholder="For website enquires please try and include as much detail as possible about your desired content. Also, if applicable send a website with a similar theme for clarification of concept." spellcheck="true"></textarea>
+        </div>
+      
+        <label for="image"> If suitable attach an image </label>
+        <div>
+          <input type="file" id="image" name="image" data-file-accept="pdf, doc, docx, jpg, jpeg, png, gif" data-file-maxsize="1024" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
+        </div>
+      
+        <button class="btn" type="submit">Send Message</button>
       </form>
+      
     </div>
   
   
