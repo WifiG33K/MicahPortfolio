@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .left{
+       width: 65%;
+       padding-left:10%;
+       float: left;
+    }
+    .right{
+       width: 35%;
+       padding-left:10%;
+       float: left;
+    }
+    </style>
+  <head>
+  <body>
+    <div class="left">
+      <h1> Success, your message has been sent</h1>
+      <p1> I'll try to get back to your message ASAP!</p1>
+    </div>
+    <div class="right">
+      <image src="">
+    </div>
+
+  </body>
+</html>
