@@ -10,7 +10,14 @@
     /* Header  */
     /* Set the style of the body */
     #theme{background-image: linear-gradient(to right bottom, #000bff, #0053ff, #0077ff, #0094ff, #00aeff, #00bdff, #00ccff, #00d9fd, #00e2f9, #00ebf3, #31f3ea, #53fbdf);}
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    body, h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    h1 { font-weight:bold;}
+    h5{font-size: 13px;}
+    .techUsed{
+      font-weight:bold;
+      font-style: oblique;
+      }
+
     .w3-row-padding img {margin-bottom: 12px}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #222;}
@@ -90,6 +97,18 @@
   padding: 20px;
 }
 
+.projectContainer{
+  background-color: #fff;
+  font-family: 'Roboto';
+  max-width: 1100px;
+  height: 1300px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+
+}
 
 .input, .area{
   width: 100%;
@@ -138,8 +157,32 @@
 .area:focus{
   border: 2px solid #00bdff;
 }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.screenshot {
+  max-height: 600px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
     </style>
-  </head>
+  </head> 
 <body id="theme">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -290,71 +333,52 @@
     </a>
 
     
-    <!-- Projects grid -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Projects</h3>
+   <!-- Projects grid -->
+    <div class="projectContainer">
+        <div class="column">
+          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
+          <h1 >Playpals</h1>
+          <div> <h4>Technologies Used:<h4 class="techUsed"> Node JS, express, React, MongosDB</h4></h4></div>
+          <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
+            <div>
+              <button style = "width: 40%;" class="btn">See Github repo</button>
+              <button  style = "width: 40%;" class="btn">See live</button>
+            </div>
+        </div>
 
-    <div id="projects" class="w3-row-padding" style="margin:0 -16px">
+        <div class="column">
+          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
+          <h1 >Academic Twitter Bot</h1>
+           <div> <h4>Technologies Used:</h4><h4 class="techUsed"> Node JS, express, React, MongosDB</h4></div>
+            <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
+            <div>
+              <button style = "width: 40%;" class="btn">See Github repo</button>
+              <button  style = "width: 40%;" class="btn">See live</button>
+            </div>
+        </div>
 
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Project...</li>
-          <li class="w3-padding-16">
-            <img src="./images/Snip20230317_4-removebg-preview.png">
-          </li>
-          <li class="w3-padding-16">Technologies Used:</li>
-          <li class="w3-padding-16">Description:</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See Github repo</button>
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See live</button>
-          </li>
-        </ul>
-      </div>
+        <div class="column">
+          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
+          <h1 >Instagram book review interface</h1>
+            <h4 >Technologies Used:</h4>
+            <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
+            <div>
+              <button style = "width: 40%;" class="btn">See Github repo</button>
+              <button  style = "width: 40%;" class="btn">See live</button>
+            </div>
+        </div>
 
-      <div id="projects" class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Project...</li>
-          <li class="w3-padding-16">
-            <img src="./images/Snip20230317_4-removebg-preview.png">
-          </li>
-          <li class="w3-padding-16">Technologies Used:</li>
-          <li class="w3-padding-16">Description:</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See Github repo</button>
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See live</button>
-          </li>
-        </ul>
-      </div>
+        <div class="column">
+          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
+          <h1> Gym advisor Chatbot</h1>
+            <h4 >Technologies Used:</h4>
+            <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
+            <div>
+              <button style = "width: 40%;" class="btn">See Github repo</button>
+              <button  style = "width: 40%;" class="btn">See live</button>
+            </div>
+        </div>
 
-      <div id="projects" class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Project...</li>
-          <li class="w3-padding-16">
-            <img src="./images/Snip20230317_4-removebg-preview.png">
-          </li>
-          <li class="w3-padding-16">Technologies Used:</li>
-          <li class="w3-padding-16">Description:</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See Github repo</button>
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See live</button>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center " id="projects">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Project...</li>
-          <li class="w3-padding-16">
-            <img src="./images/Snip20230317_4-removebg-preview.png">
-          </li>
-          <li class="w3-padding-16">Technologies Used:</li>
-          <li class="w3-padding-16">Description:</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See Github repo</button>
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">See live</button>
-          </li>
-        </ul>
-      </div>
         <!-- End Project Section -->
     </div>
 
