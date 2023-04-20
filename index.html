@@ -1,25 +1,26 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
     <title>Micah David Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <style>
-    /* Header  */
-    /* Set the style of the body */
-    #theme{
-      background-image: url("./images/background.jpeg");      }
+    
+    	#theme{
+      background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701887515.jpg");      
+      }
     body, h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     h1 { font-weight:bold;}
     h5{font-size: 13px;}
     .techUsed{
       font-weight:bold;
       font-style: oblique;
-      }
-
-    .w3-row-padding img {margin-bottom: 12px}
+      } 
+      .w3-row-padding img {margin-bottom: 12px}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #222;}
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -33,7 +34,7 @@
     #projects{
       border-radius: 25px;
     }
-    .formFooter{
+     .formFooter{
         display: none;
     }
     /*split top section in to widgets beside each other*/
@@ -54,7 +55,7 @@
     ul {
       list-style-type: none;
   }
-    .item-container{
+  .item-container{
           width:13%;
           height:120px;
           margin: 3.5%;
@@ -68,18 +69,7 @@
     .item-container:hover {
       color: rgba(255, 255, 255, 1);
       box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    }
-    .icons{
-        max-width: 100%;
-        max-height: 60%;
-        color: #000;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .technologies-container{
+    } .technologies-container{
           height: 450px;
           border-radius: 25px;
           border-color: #fff;
@@ -104,18 +94,72 @@
   background-color: #fff;
   font-family: 'Roboto';
   max-width: 1100px;
-  height: 1300px;
+  height: 680px;
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72,98,85, 0.6);
   box-sizing: border-box;
   padding: 20px;
   border-radius: 20px;
-
+  text-align: center;
+  }
+  .input, .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
 }
- #shift{
-   margin-left:150px;
- }
 
+#subtitle{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+ #title{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  color: #00bdff;
+}
+
+.area{
+  height: 200px;
+}
+
+.btn{
+  width: 250px;
+  background: #00bdff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #fff;
+  border-width:0px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus, 
+.area:focus{
+  border: 2px solid #00bdff;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+ #shift{
+   margin-left:80px;
+ }
 .input, .area{
   width: 100%;
   padding: 20px;
@@ -206,9 +250,6 @@
           float: center;
      }
 
- #shift{
-   margin-left:0px;
- }
 
   header{
      margin-top: 50px;
@@ -230,11 +271,45 @@
   border-radius: 20px;
 }
 
+    .icons{
+        max-width: 100%;
+        max-height: 60%;
+        color: #000;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+        /* Grid styles */
+        #game-grid {
+            display: grid;
+            grid-template-columns: repeat(25, 20px);
+            grid-template-rows: repeat(25, 20px);
+            width:420px;
+            padding-left: 24%;
+        }
+
+        /* Cell styles */
+        .cell {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+        }
+
+        /* Snake styles */
+        .snake {
+            background-color: #008000;
+        }
+
+        /* Food styles */
+        .food {
+            background-color: #ff0000;
+        }
     </style>
-  </head> 
+</head>
 <body id="theme">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="./images/md.png" style="width:100%">
@@ -259,7 +334,6 @@
     <p>CONTACT</p>
   </a>
 </nav>
-
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
@@ -279,8 +353,8 @@
     <p id="sub">Website and Full Stack Developer</p>
 
   </header>
-
-
+  
+  
   <!-- About Section -->
 
     <div style="margin-bottom:500px">
@@ -291,20 +365,20 @@
      <!--right top widget -->
     <div class="rtop-widget" style="padding-right:60px">
     <h2 class="w3-text-light-grey" >Hi, I'm Micah David.</h2>
-    <hr style="width:200px">
-        
-    </div>
+    <hr style="width:200px">  
+     </div>
         
      <p id = "about" >
         I'm a recent Computer Science graduate with skills in Object-Oriented Programming and Agile development. As a junior software/full-stack developer, I have experience with web technologies such as HTML, CSS, JavaScript, Node.js, and React. My focus is on delivering high-quality software solutions that satisfy customer needs.<br><br>
         I've collaborated in sprints using Agile methodologies and have used Git for version control and test-driven development. I also have knowledge of cybersecurity principles, IT support, and Unix/Linux operating systems.<br><br>
         My portfolio website reflects my passion for software development and my continuous learning. It showcases my problem-solving skills and my ability to develop secure software solutions. 
      </p>
-        
+    
      </div>
-     <!--Technologies grid -->
-  <h2 style="margin-bottom:-20px;" id="shift" class="w3-wide w3-text-light-grey"> Technologies Used</h2>
-  <hr style="width:300px;" id = "shift">
+  <div id="shift">
+          <!--Technologies grid -->
+  <h2 style="margin-bottom:-20px; margin-left:100px;"  class="w3-wide w3-text-light-grey"> Technologies Used</h2>
+  <hr style="margin-left:100px; width:300px;" >
   <div class="w3-content" >
     <div class="technologies-container">
             <ul>
@@ -371,160 +445,221 @@
             </ul>  
     </div>
            <!-- End Technologies Section -->
-
-  
-    <h2 class="w3-text-light-grey" >
+       <h2 style ="margin-top: 80px" class="w3-text-light-grey" >
       For more insight have a look at my resume...
     </h2>
     <a href="./MicahDavidCV-2.pdf" download="" class="w3-button w3-light-grey w3-padding-large w3-section">
       <i class="fa fa-download"></i> Download Resume
     </a>
 
-    <h2 style="margin-bottom:-20px" class="w3-wide w3-text-light-grey" >My Projects</h2>
+    <h2 style="margin-bottom:-20px; margin-top: 80px;" class="w3-wide w3-text-light-grey" >My Projects</h2>
     <hr style="width:300px">
       
-   <!-- Projects grid -->
-    <div id="projects" class="projectContainer">
-        <div class="column">
-          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
-          <h1 >Playpals</h1>
-          <div> <h4>Technologies Used:<h4 class="techUsed"> Node JS, express, React, MongosDB</h4></h4></div>
-          <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
-            <div>
-              <button style = "width: 40%;" class="btn">See Github repo</button>
-              <button  style = "width: 40%;" class="btn">See live</button>
-            </div>
-        </div>
-
-        <div class="column">
-          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
-          <h1 >Academic Twitter Bot</h1>
-           <div> <h4>Technologies Used:</h4><h4 class="techUsed"> Node JS, express, React, MongosDB</h4></div>
-            <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
-            <div>
-              <button style = "width: 40%;" class="btn">See Github repo</button>
-              <button  style = "width: 40%;" class="btn">See live</button>
-            </div>
-        </div>
-
-        <div class="column">
-          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
-          <h1 >Instagram book review interface</h1>
-            <h4 >Technologies Used:</h4>
-            <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
-            <div>
-              <button style = "width: 40%;" class="btn">See Github repo</button>
-              <button  style = "width: 40%;" class="btn">See live</button>
-            </div>
-        </div>
-
-        <div class="column">
-          <img class = "screenshot" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg">
-          <h1> Gym advisor Chatbot</h1>
-            <h4 >Technologies Used:</h4>
-            <h5 >London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</h5>
-            <div>
-              <button style = "width: 40%;" class="btn">See Github repo</button>
-              <button  style = "width: 40%;" class="btn">See live</button>
-            </div>
-        </div>
-
-        <!-- End Project Section -->
+    <!-- Projects grid -->
+     <div id="projects" class="projectContainer">
+     <h1>Sorry this section is under maintenance</h1>
+     <h4>While your here try to beat my high score of 15!</h4>
+    <div id="game-grid" style="padding-left: 24%;"></div>
+    <h5 id="score">Score: 0</h5>
     </div>
 
+    <script>
+        const gridSize = 25;
+        const gameGrid = document.getElementById("game-grid");
+        const scoreElement = document.getElementById("score");
+        let snake = [{ x: 10, y: 10 }];
+        let food = generateFood();
+        let direction = { x: 0, y: 0 };
+        let score = 0;
+
+        // Main game loop
+        setInterval(gameLoop, 200);
+
+        // Function for the game loop
+        function gameLoop() {
+            moveSnake();
+            if (checkCollision()) {
+                endGame();
+            }
+            drawGrid();
+            drawSnake();
+            drawFood();
+        }
+
+        // Function to move the snake
+        function moveSnake() {
+            const head = { x: snake[0].x + direction.x, y: snake[0].y + direction.y };
+            snake.unshift(head);
+            if (head.x === food.x && head.y === food.y) {
+                score++;
+                scoreElement.textContent = "Score: " + score;
+                food = generateFood();
+            } else {
+                snake.pop();
+            }
+        }
+
+        // Function to check for collision
+        function checkCollision() {
+            const head = snake[0];
+            // Check for collision with walls
+            if (head.x < 0 || head.x >= gridSize || head.y < 0 || head.y >= gridSize) {
+                return true;
+            }
+            // Check for collision with self
+            for (let i = 1; i < snake.length; i++) {
+                if (snake[i].x === head.x && snake[i].y === head.y) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // Function to end the game
+        function endGame() {
+            alert("Game Over! Your score was: " + score);
+            snake = [{ x: 10, y: 10 }];
+            food = generateFood();
+            direction = { x: 0, y: 0 };
+            score = 0;
+            scoreElement.textContent = "Score: " + score;
+        }
+
+        // Function to draw the grid
+        function drawGrid() {
+            gameGrid.innerHTML = "";
+            for (let i = 0; i < gridSize * gridSize; i++) {
+                const cell = document.createElement("div");
+                cell.className = "cell";
+                gameGrid.appendChild(cell);
+            }
+        }
+
+        // Function to draw the snake on the grid
+        function drawSnake() {
+            const gridCells = gameGrid.children;
+            // Clear previous snake
+            for (let i = 0; i < gridCells.length; i++) {
+                gridCells[i].classList.remove("snake");
+            }
+            //// Draw current snake
+for (let i = 0; i < snake.length; i++) {
+const cellIndex = snake[i].y * gridSize + snake[i].x;
+gridCells[cellIndex].classList.add("snake");
+}
+}
+
+    // Function to draw the food on the grid
+    function drawFood() {
+        const gridCells = gameGrid.children;
+        const foodIndex = food.y * gridSize + food.x;
+        gridCells[foodIndex].classList.add("food");
+    }
+
+    // Function to generate random food position
+    function generateFood() {
+        const foodX = Math.floor(Math.random() * gridSize);
+        const foodY = Math.floor(Math.random() * gridSize);
+        return { x: foodX, y: foodY };
+    }
+
+    // Function to handle keydown events for changing snake direction
+    document.addEventListener("keydown", function(event) {
+        const key = event.keyCode;
+        if (key === 37 && direction.x !== 1) {
+            direction = { x: -1, y: 0 }; // left
+        } else if (key === 38 && direction.y !== 1) {
+            direction = { x: 0, y: -1 }; // up
+        } else if (key === 39 && direction.x !== -1) {
+            direction = { x: 1, y: 0 }; // right
+        } else if (key === 40 && direction.y !== -1) {
+            direction = { x: 0, y: 1 }; // down
+        }
+    });
+
+</script>
+<!-- Contact Section -->
+<div class="w3-padding-64 w3-content w3-text-grey" style ="margin-top: 80px" id="contact">
+  <h2 class="w3-text-light-grey">Contact Me</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <div class="w3-section">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> London, UK</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +44 7704272015</p>
+  </div><br>
+  <p>Let's get in touch. Send me a message:</p>
+
+
+
+  <div class="container">
+    <p id="title">GET IN TOUCH</p>
+    <h3 id="subtitle">Fill out the form below and I will get back to you ASAP.</h3> 
+  
+  
+    <form action="https://formsubmit.co/7fbe424219fcd16354a7ffe98486e160" method="POST">
+      Prefered contact method<span class="form-required">*</span> 
+      <div>
+        <select style="width:150px" data-component="dropdown" name="preference" required aria-label="Prefered contact method">
+          <option value="">Please Select</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Email">Email</option>
+        </select>
+      </div>
+        
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display:none;"> 
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false"> 
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_next" value="https://mik3scodes.github.io/MicahPortfolio/formSent"> 
+    
+    
+      <label for="name"> Name <span class="form-required">*</span> </label>
+      <div>
+        <input class="input" id="name" name="name" required type="text">
+      </div>
+    
+      <label for="organisation"> Organisation </label>
+      <div>
+        <input class="input" id="organisation" name="organisation" type="text">
+      </div>
+    
+      <label for="email"> Email<span class="form-required">*</span> </label>
+      <div>
+        <input type="email" id="email" name="email" required class="input" placeholder="ex: myname@example.com">
+      </div>
+    
+      <label for="number"> Contact Number </label>
+      <div>
+        <input type="text" id="number" name="number" class="input">
+      </div>
+    
+      <label for="message"> Message<span class="form-required">*</span> </label>
+      <div>
+        <textarea class="area" id="message" name="message" required cols="60" rows="6" placeholder="For website enquires please try and include as much detail as possible about your desired content. Also, if applicable send a website with a similar theme for clarification of concept." spellcheck="true"></textarea>
+      </div>
+    
+      <label for="image"> If suitable attach an image </label>
+      <div>
+        <input type="file" id="image" name="image" data-file-accept="pdf, doc, docx, jpg, jpeg, png, gif" data-file-maxsize="1024" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
+      </div>
+    
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+    
   </div>
+
 
 
    
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> London, UK</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +44 7704272015</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-
-
-    <div class="container">
-      <p id="title">GET IN TOUCH</p>
-      <h3 id="subtitle">Fill out the form below and I will get back to you ASAP.</h3> 
     
-    
-      <form action="https://formsubmit.co/7fbe424219fcd16354a7ffe98486e160" method="POST">
-        Prefered contact method<span class="form-required">*</span> 
-        <div>
-          <select style="width:150px" data-component="dropdown" name="preference" required aria-label="Prefered contact method">
-            <option value="">Please Select</option>
-            <option value="Mobile">Mobile</option>
-            <option value="Email">Email</option>
-          </select>
-        </div>
-          
-          <!-- Honeypot -->
-          <input type="text" name="_honey" style="display:none;"> 
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false"> 
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_next" value="https://mik3scodes.github.io/MicahPortfolio/formSent"> 
-      
-      
-        <label for="name"> Name <span class="form-required">*</span> </label>
-        <div>
-          <input class="input" id="name" name="name" required type="text">
-        </div>
-      
-        <label for="organisation"> Organisation </label>
-        <div>
-          <input class="input" id="organisation" name="organisation" type="text">
-        </div>
-      
-        <label for="email"> Email<span class="form-required">*</span> </label>
-        <div>
-          <input type="email" id="email" name="email" required class="input" placeholder="ex: myname@example.com">
-        </div>
-      
-        <label for="number"> Contact Number </label>
-        <div>
-          <input type="text" id="number" name="number" class="input">
-        </div>
-      
-        <label for="message"> Message<span class="form-required">*</span> </label>
-        <div>
-          <textarea class="area" id="message" name="message" required cols="60" rows="6" placeholder="For website enquires please try and include as much detail as possible about your desired content. Also, if applicable send a website with a similar theme for clarification of concept." spellcheck="true"></textarea>
-        </div>
-      
-        <label for="image"> If suitable attach an image </label>
-        <div>
-          <input type="file" id="image" name="image" data-file-accept="pdf, doc, docx, jpg, jpeg, png, gif" data-file-maxsize="1024" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
-        </div>
-      
-        <button class="btn" type="submit">Send Message</button>
-      </form>
-      
-    </div>
   
-  
-  
-     
-      
-    
-    <!-- End Contact Section -->
-  </div>
-  
-
-
-
-<!-- END PAGE CONTENT -->
+  <!-- End Contact Section -->
+</div>
 </div>
 
 
 
-</body></html>
-
-
+</body>
+</html>
 
